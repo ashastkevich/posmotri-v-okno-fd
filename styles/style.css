@@ -18,6 +18,7 @@ html {
   background-color: #1b1919;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -63,12 +64,10 @@ ol {
 }
 
 .content {
-  margin-top: 133px;
   max-width: 1140px;
-  max-height: 534px;
   display: grid;
   grid-template-columns: 711px 399px;
-  grid-template-rows: 534px;
+  grid-template-rows: 1fr;
   grid-template-areas:
   "result content__details";
   gap: 30px;
@@ -96,7 +95,7 @@ ol {
   grid-area: search-form;
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: baseline;
   /* gap: 40px; */
 }
 
@@ -171,7 +170,6 @@ ol {
   flex-direction: column;
   gap: 5px;
   border: none;
-  
 }
 
 .search-form__fieldset-title {
@@ -217,7 +215,7 @@ ol {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 75px;
-  line-height: 94%;
+  line-height: 0.94;
   text-transform: uppercase;
 
 }
@@ -234,6 +232,10 @@ ol {
   outline: none;
 }
 
+.content__card-link:active {
+  background: #545050;
+}
+
 .content__card-link:hover {
   text-decoration: underline;
 }
@@ -244,8 +246,8 @@ ol {
 
 .search-form__label {
   display: flex;
-  /* width: fit-content; */
   gap: 5px;
+  align-items: end;
 }
 
 .search-form__label:hover {
@@ -298,10 +300,13 @@ ol {
 .search-form__submit-button {
   width: 194px;
   height: 34px;
+  align-self: flex-end;
 }
 
 .more-button {
   width: 100%;
+  height: 34px;
+  margin-top: 30px;
 }
 
 .button:hover {
