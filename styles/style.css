@@ -247,7 +247,7 @@ ol {
 .search-form__label {
   display: flex;
   gap: 5px;
-  align-items: end;
+  align-items: center;
 }
 
 .search-form__label:hover {
